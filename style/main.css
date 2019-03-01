@@ -1,0 +1,62 @@
+* { 
+    box-sizing: inherit; 
+}
+
+body { 
+    box-sizing: border-box; 
+    background-image: linear-gradient(to Right, #3B7BA7, #3B7BA7 50%, white 50%, white);
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.containerChild {
+    padding: 50px;
+    min-width: 0;
+}
+
+.aside {
+    background-color: #3B7BA7;
+    width: 300px;
+    flex: none;
+}
+
+.main {
+    flex: auto;
+    background-color: white;
+}
+
+.header {
+    min-height: 100vh;
+}
+
+.cindelFont{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.prenom {
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+.nom{
+    font-size: 60px;
+    color: #7ba73b;
+    font-weight: bolder;
+}
+
+.titre{
+    font-size: 30px;
+    color: #939393;
+}
+
+.imgProfil{
+    width: 100%;
+    display: block;
+}
