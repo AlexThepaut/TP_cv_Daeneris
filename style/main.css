@@ -7,56 +7,84 @@ body {
     background-image: linear-gradient(to Right, #3B7BA7, #3B7BA7 50%, white 50%, white);
 }
 
-.container {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
+.header {
+    height: 100vh;
 }
 
-.containerChild {
-    padding: 50px;
-    min-width: 0;
+.container {
+    display: flex;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
 }
 
 .aside {
-    background-color: #3B7BA7;
-    width: 300px;
     flex: none;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 50px;
+    background: #3B7BA7;
 }
 
 .main {
     flex: auto;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+
+    background: white;
+
+    position: relative;
 }
 
-.header {
-    min-height: 100vh;
-}
-
-.cindelFont{
+.name {
     font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1;
 }
 
-.prenom {
+.name-firstname {
     font-size: 60px;
-    color: black;
-    font-weight: bold;
 }
 
-.nom{
+.name-lastname {
     font-size: 60px;
     color: #7ba73b;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
-.titre{
+.name-title {
     font-size: 30px;
+    margin-top: 30px;
     color: #939393;
+    font-weight: normal;
 }
 
-.imgProfil{
+.img-profil {
+    border-radius: 50%;
     width: 100%;
     display: block;
+}
+
+.cartouche{
+    position: absolute;
+    bottom: 50px;
+    border-top: #939393 solid 1px;
+}
+
+.cartouche {
+    position: absolute;
+    bottom: 50px;
+
+    width: calc(100% - 100px);
+    table-layout: fixed;
+    border-top: 1px solid #939393;
+    font-size: 16px;
+}
+
+.cartouche th {
+    text-align: left;
 }
